@@ -1,0 +1,10 @@
+:root{
+    --base-color:#6D31EE;
+    --base-color-light:#AA9DFA;
+    --base-color-dark:#4F28A5;
+    /* font sixe */
+    --fz-20:1.25rem;
+    
+    --black:rgb(0, 0, 0);
+    --white:rgb(255, 255, 255);
+}

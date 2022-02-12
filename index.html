@@ -7,21 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/choices-init.css">
     <link rel="stylesheet" href="css/label.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/btns.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <!-- select -->
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/select-init.js"></script>
-    <title>Document</title>
+    <title>Радио W-Wawe</title>
 </head>
 
 <body class="page-body">
     <header class="header">
+       <div class="container">
         <div class="header-top">
             <a href="#" class="header-top__logo">
-                <img src="" alt="Логотип компании" class="header-top__logo-img">
+                <img src="img/logo.svg" alt="Логотип компании" class="header-top__logo-img">
             </a>
             <nav class="header-top__nav">
                 <ul class="header-top__nav-list">
@@ -44,7 +49,10 @@
             </nav>
             <div class="header-top__enter-wrapper">
                 <button class="btn-search"></button>
-                <button class="btn"><span>Вход</span></button>
+                <button class="btn-mini">
+                    Вход
+                </button>
+                <button class="btn-burger"></button>
             </div>
         </div>
         <div class="header-bottom">
@@ -88,6 +96,7 @@
                 </li>
             </ul>
         </div>
+       </div>
     </header>
 
     <main class="main">
@@ -418,7 +427,7 @@
                     <article class="person-item">
                         <figure>
                          <p><img src="img/guests.jpg" alt="Гость" /></p>
-                         <div class="person-social">
+                         <div class="social-container">
                             <ul class="social-list">
                                 <li class="social-item">
                                     <a href="#" class="social-link instagram"></a>
@@ -431,14 +440,14 @@
                                 </li>
                             </ul>
                         </div>
-                         <figcaption>
-                             <h3 class="person-name">
-                                 Ольга Мартынова
-                             </h3>
-                             <p class="person-desc">
-                                Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
-                             </p>
-                         </figcaption>
+                            <figcaption>
+                                <h3 class="person-name">
+                                    Ольга Мартынова
+                                </h3>
+                                <p class="person-desc">
+                                    Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
+                                </p>
+                            </figcaption>
                         </figure>
                         <a href="#" class="btn-mini">Эфиры с гостем</a>
                     </article>
@@ -700,16 +709,154 @@
                   <img class="decorative-img" src="img/Spiral 3.svg">
                   <img class="decorative-img" src="img/Dawn.svg">
               </div>
-              
-
-<!-- здесь -->
-
+              <ul class="about__command-list">
+                  <li class="about__command-item">
+                      <img src="#" alt="" class="command-img">
+                      <div class="about__command-card">
+                          <p class="command-title">
+                              анна
+                          </p>
+                          <p class="command-subtitle">
+                              текст
+                          </p>
+                      </div>
+                  </li>
+                  <li class="about__command-item">
+                      <img src="#" alt="" class="command-img">
+                      <div class="about__command-card">
+                          <p class="command-title">
+                              анна
+                          </p>
+                          <p class="command-subtitle">
+                              текст
+                          </p>
+                      </div>
+                  </li>
+                  <li class="about__command-item">
+                      <img src="#" alt="" class="command-img">
+                      <div class="about__command-card">
+                          <p class="command-title">
+                              анна
+                          </p>
+                          <p class="command-subtitle">
+                              текст
+                          </p>
+                      </div>
+                  </li>
+                  <li class="about__command-item">
+                      <img src="#" alt="" class="command-img">
+                      <div class="about__command-card">
+                          <p class="command-title">
+                              анна
+                          </p>
+                          <p class="command-subtitle">
+                              текст
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+              <form action="send.php" class="form" method="post">
+                <fieldset>
+                    <legend>Отправьте заявку на обратный звонок</legend>
+                    <textarea class="form__textarea" name="clientinfo" id="clientinfo" placeholder="Что скажете?"></textarea>
+                    <div class="form__input-wrap">
+                        <input id="name" type="text" class="form__name" placeholder="Имя">
+                        <input id="mail" type="text" class="form__mail" placeholder="E-mail">
+                    </div>
+                    <button type="submit">
+                        <span>Отправить</span>
+                    </button>
+                        <p>
+                            <label for="form__succes">
+                                <input id="form__succes" type="checkbox">
+                                Согласен на обработку персональных данных
+                            </label>
+                        </p>
+                </fieldset>
+              </form>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__left-wrap">
+                <a href="#" class="logo-footer">
+                    <img src="img/logo2.svg" alt="Логотип компании">
+                    <div class="social-container">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link instagram"></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link facebook"></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link twitter"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__right-wrap">
+                <ul class="column__menu-list">
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Подкасты
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Передачи
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Гости
+                        </a>
+                    </li>
+                </ul>
+                <ul class="column__menu-list">
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Плейлисты
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Сетка
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            О нас
+                        </a>
+                    </li>
+                </ul>
+                <ul class="column__menu-list">
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Блоги
+                        </a>
+                    </li>
+                    <li class="column__menu-item">
+                        <a href="#" class="column__menu-link">
+                            Топы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>
+                    W-WAVE ® 2021
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
