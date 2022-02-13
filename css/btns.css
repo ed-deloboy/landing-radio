@@ -1,4 +1,46 @@
-.btn {}
+.btn {
+    color: var(--primary);
+    font-weight: 600;
+    padding: 15px 28px;
+    border: 2px solid var(--primary);
+    border-radius: 40px;
+    background-color: var(--white);
+    transition: color .1s ease-in-out,background-color .1s ease-in-out;
+}
+.btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+.btn:focus {
+    color: var(--white);
+    background-color: var(--primary_light);
+    border: 2px solid var(--primary);
+}
+.btn:active {
+    color: var(--white);
+    background-color: var(--primary_shade);
+    border: 2px solid var(--primary_shade);
+}
+
+.btn--bg {
+    color: var(--white);
+    background-color: var(--primary);
+}
+.btn--bg:hover {
+    color: var(--white);
+    background-color: var(--primary_light);
+    border: 2px solid var(--primary_light);
+}
+.btn--bg:focus {
+    color: var(--white);
+    background-color: var(--primary_light);
+    border: 2px solid var(--primary_shade);
+}
+.btn--bg:active {
+    color: var(--white);
+    background-color: var(--primary_shade);
+    border: 2px solid var(--primary_shade);
+}
 .btn-mini{
     position: relative;
     color: var(--black);
@@ -55,9 +97,34 @@
 }
 
 
-.btn--bg {}
-
 .btn-play {}
+.btn-play-mini {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: var(--text_gray);
+    transition: background-color .1s ease-in-out;
+}
+.btn-play-mini:hover {
+    background-color: var(--primary);
+}
+.btn-play-mini:focus {
+    background-color: var(--primary_light);
+}
+.btn-play-mini:active {
+    background-color: var(--primary_shade);
+}
+.btn-play-mini::after {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent; /* Прозрачные границы */
+    border-top: 9px solid var(--white);
+    transform: rotate(-90deg);
+    top: 3px;
+    left: 10px;
+    transition:border-top .1s ease-in-out;
+}
 .btn-burger{
     display: none;
 }

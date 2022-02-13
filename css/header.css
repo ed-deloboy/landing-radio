@@ -1,4 +1,6 @@
 .header {
+    border-bottom: 1px solid var(--light_color);
+    padding: 20px 0;
 }
 .header-top {
     display: flex;
@@ -20,23 +22,7 @@
     margin-right: 57px;
 }
 .header-top__nav-link {
-    font-size: var(--fz-20);
-    color: var(--black);
-    padding: 4px;
-    background-color: transparent;
-    transition: color .2s ease-in-out,background-color .2s ease-in-out;
-}
-
-.header-top__nav-link:hover {
-    color: var(--base-color);
-}
-.header-top__nav-link:focus {
-    color: var(--white);
-    background-color: var(--base-color-light);
-}
-.header-top__nav-link:active {
-    color: var(--base-color-dark);
-    background-color: transparent;
+    font-size: var(--fz-20); 
 }
 .header-top__enter-wrapper {
     display: flex;
@@ -47,25 +33,85 @@
     margin-right: 10px;
 }
 
-.header-bottom {
+.sub-header{
+    border-bottom: 1px solid var(--light_color);
+    padding: 20px 0;
+    position: relative;
 }
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-bottom__nav {
+    display: flex;
+
 }
 .header-bottom__item {
+   
+}
+.header-bottom__item:not(:last-child) {
+    margin-right: 50px;
 }
 .header-bottom__link {
+    font-size: 1rem;
+   color: var(--black);
 }
 .header-bottom__radio-list {
+    display: flex;
+
+}
+.header-bottom__radio-list>li{
+    border-left: 1px solid var(--light_color);
+    border-right: 1px solid var(--light_color);
+    margin-left: -2px;
+
 }
 .header-bottom__radio-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
-.btn-play {
-}
+
 .header-bottom__radio-item--wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 .header-bottom__radio-item--title {
+    text-align: center;
+
 }
 .header-bottom__radio-item--radio-name {
+    text-align: center;
 }
 .header-bottom__item-eighteen-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: 55px;
+    margin-left: 30px;
 }
+.header-bottom__item-eighteen-plus::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 55px;
+    background-color: var(--light_color);
+}
+.eighteen{
+position: relative;
+border: 1px solid var(--light_color);
+padding: 20px;
+border-radius: 100%;
+background-color: var(--white);
+}
+.eighteen::after{
+    content: '12+';
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    }

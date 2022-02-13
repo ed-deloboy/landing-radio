@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/label.css">
     <link rel="stylesheet" href="css/btns.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
 
     <!-- select -->
     <script defer src="js/choices.min.js"></script>
@@ -24,89 +25,94 @@
 <body class="page-body">
     <header class="header">
        <div class="container">
-        <div class="header-top">
-            <a href="#" class="header-top__logo">
-                <img src="img/logo.svg" alt="Логотип компании" class="header-top__logo-img">
-            </a>
-            <nav class="header-top__nav">
-                <ul class="header-top__nav-list">
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link">Подкасты</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link">Передачи</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link">Гости</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link">Плейлисты</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-top__enter-wrapper">
-                <button class="btn-search"></button>
-                <button class="btn-mini">
-                    Вход
-                </button>
-                <button class="btn-burger"></button>
+            <div class="header-top">
+                <a href="#" class="header-top__logo">
+                    <img src="img/logo.svg" alt="Логотип компании" class="header-top__logo-img">
+                </a>
+                <nav class="header-top__nav">
+                    <ul class="header-top__nav-list">
+                        <li class="header-top__nav-item">
+                            <a href="#" class="header-top__nav-link link">Подкасты</a>
+                        </li>
+                        <li class="header-top__nav-item">
+                            <a href="#" class="header-top__nav-link link">Передачи</a>
+                        </li>
+                        <li class="header-top__nav-item">
+                            <a href="#" class="header-top__nav-link link">Гости</a>
+                        </li>
+                        <li class="header-top__nav-item">
+                            <a href="#" class="header-top__nav-link link">Плейлисты</a>
+                        </li>
+                        <li class="header-top__nav-item">
+                            <a href="#" class="header-top__nav-link link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top__enter-wrapper">
+                    <button class="btn-search"></button>
+                    <button class="btn-mini">
+                        Вход
+                    </button>
+                    <button class="btn-burger"></button>
+                </div>
             </div>
-        </div>
-        <div class="header-bottom">
-            <ul class="header-bottom__nav">
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Новости</a>
-                </li>
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Блоги</a>
-                </li>
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Топы</a>
-                </li>
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Опросы</a>
-                </li>
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Рейтинги</a>
-                </li>
-                <li class="header-bottom__item">
-                    <a href="#" class="header-bottom__link">Реклама</a>
-                </li>
-            </ul>
-            <ul class="header-bottom__radio-list">
-                <li class="header-bottom__radio-item">
-                    <button class="btn-play"></button>
-                    <div class="header-bottom__radio-item--wrap">
-                        <h4 class="header-bottom__radio-item--title">Ранее в эфире</h4>
-                        <p class="header-bottom__radio-item--radio-name">"Музыка"</p>
-                    </div>
-                </li>
-                <li class="header-bottom__radio-item">
-                    <button class="btn-play"></button>
-                    <div class="header-bottom__radio-item--wrap">
-                        <h4 class="header-bottom__radio-item--title">Сейчас в эфире</h4>
-                        <p class="header-bottom__radio-item--radio-name">"Как так?"</p>
-                    </div>
-                </li>
-                <li class="header-bottom__item-eighteen-plus">
-                    <img src="" alt="Для тех кому есть 18">
-                </li>
-            </ul>
-        </div>
        </div>
     </header>
+    <div class="sub-header">
+        <div class="container">
+            <div class="header-bottom">
+                <ul class="header-bottom__nav">
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Новости</a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Блоги</a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Топы</a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Опросы</a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Рейтинги</a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="#" class="header-bottom__link link">Реклама</a>
+                    </li>
+                </ul>
+                <ul class="header-bottom__radio-list">
+                    <li class="header-bottom__radio-item">
+                        <button class="btn-play-mini"></button>
+                        <div class="header-bottom__radio-item--wrap">
+                                <p class="header-bottom__radio-item--title">Ранее в эфире</p>
+                                <p class="header-bottom__radio-item--radio-name"><q>Музыка</q></p>
+                        </div>
+                    </li>
+                    <li class="header-bottom__radio-item">
+                        <button class="btn-play-mini"></button>
+                        <div class="header-bottom__radio-item--wrap">
+                            <p class="header-bottom__radio-item--title">Сейчас в эфире</p>
+                            <p class="header-bottom__radio-item--radio-name"><q>Как так?</q></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="header-bottom__item-eighteen-plus">
+                    <p class="eighteen"></p>
+                 </div>
+                
+            </div>
+        </div>
+    </div>
 
     <main class="main">
         <section class="hero">
            <div class="container">
             <h1 class="hero__title title-h1">
-                Радио W-Wawe
+                Радио <span class="italic-400">W-Wawe</span>
             </h1>
-            <p class="hero__desc">
-                Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое :)
+            <p class="desc-16 hero__desc">
+                Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое :)
             </p>
 
             <button class="btn btn--bg">
@@ -115,6 +121,7 @@
            </div>
         </section>
         <section class="podcasts">
+          <div class="container">
             <h2 class="podcasts__title title-h2">
                 Подкасты
             </h2>
@@ -325,6 +332,7 @@
                     <span>Еще подкасты</span>
                 </button>
             </div>
+          </div>
         </section>
         <section class="transmission">
             <div class="container">

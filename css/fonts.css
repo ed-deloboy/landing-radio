@@ -12,16 +12,16 @@
 }
 
 @font-face {
-    font-family: 'Muller_Medium';
-    src: url('../fonts/MullerMedium.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Muller_Regular_italic';
     src: url('../fonts/MullerRegularItalic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
+}
+@font-face {
+    font-family: 'Muller_Medium';
+    src: url('../fonts/MullerMedium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Muller_Bold';
