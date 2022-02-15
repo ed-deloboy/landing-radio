@@ -1,22 +1,23 @@
-:root{
-    --black:rgb(0, 0, 0);
-    --white:rgb(255, 255, 255);
-    --base-color:#6D31EE;
-    --primary:#6D31EE;
-    --base-color-light:#AA9DFA;
-    --primary_light:#AA9DFA;
-    --base-color-dark:#4F28A5;
-    --primary_shade:#4F28A5;
-    --light_color:#E6E8EC;
-    --text_gray:#A1A6B4;
-    --shade_gray:#D2D5DD;
-    --red:#FF6F6F;
-    --promo_color:#F0D288;
-    --promo_color_shade:#BB973E;
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --base-color: #6D31EE;
+    --primary: #6D31EE;
+    --base-color-light: #AA9DFA;
+    --primary_light: #AA9DFA;
+    --base-color-dark: #4F28A5;
+    --primary_shade: #4F28A5;
+    --light_color: #E6E8EC;
+    --text_gray: #A1A6B4;
+    --shade_gray: #D2D5DD;
+    --red: #FF6F6F;
+    --promo_color: #F0D288;
+    --promo_color_shade: #BB973E;
     /* font sixe */
-    --fz-20:1.25rem;
-    --fz-16:1rem;
-    --title_h1_size:3.75rem;
-    
- 
+    --fz-20: 1.25rem;
+    --fz-16: 1rem;
+    --fz_12: 0.75rem;
+    --title_h1_size: 3.75rem;
+    --title_h2_size: 3rem;
+    --title_h2_size: 3rem;
 }
