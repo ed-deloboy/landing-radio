@@ -1,0 +1,55 @@
+.transmission {
+    padding: 40px 0;
+}
+
+.transmission__wrap-container {
+    display: flex;
+}
+
+.transmission__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transmission__title {}
+
+.dropdown-wrap {}
+
+.drop-desc {}
+
+.archive-wrap {
+    background-image: url(../img/mic.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 110px;
+}
+
+.archive-desc {
+    margin-top: 20px;
+}
+
+.transmission__right {}
+
+.transmission__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.transmission__item {}
+
+.transmission__desc {
+    font-size: var(--fz-20);
+    font-weight: 500;
+}
+
+.transmission__annotation {
+    margin-bottom: 20px;
+}
+
+.annotation {
+    display: block;
+    color: var(--text_gray);
+    font-size: var(--fz_12);
+}
