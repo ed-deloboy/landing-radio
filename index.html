@@ -17,10 +17,16 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/podcasts.css">
     <link rel="stylesheet" href="css/transmission.css">
+    <link rel="stylesheet" href="css/guests.css">
+    <link rel="stylesheet" href="css/acc.css">
 
     <!-- select -->
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/select-init.js"></script>
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script defer src="js/acc-init.js"></script>
     <title>Радио W-Wawe</title>
 </head>
 
@@ -110,16 +116,22 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title title-h1">
-                    Радио <span class="italic-400">W-Wawe</span>
-                </h1>
-                <p class="desc-16 hero__desc">
-                    Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое :)
-                </p>
 
-                <button class="btn btn--bg">
-                Слушать эфир
-            </button>
+                <div class="hero__info-wrap">
+                    <div>
+                        <h1 aria-label="Close" class="hero__title title-h1">
+                            Радио <span class="italic-400">W-Wawe</span>
+                        </h1>
+                        <p class="desc-16 hero__desc">
+                            Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое :)
+                        </p>
+
+                        <button class="btn btn--bg">
+                            Слушать эфир
+                        </button>
+                    </div>
+                    <img aria-hidden=“true“ src="img/microphone.jpg">
+                </div>
             </div>
         </section>
         <section class="podcasts">
@@ -430,9 +442,6 @@
                                 <option value="Татьяна Флеганова">Татьяна Флеганова</option>
                                 <option value="Анна Васильева">Анна Васильева</option>
                                 <option value="Пётр Дмитриевский">Пётр Дмитриевский</option>
-                                <option value="Пластик">Пластик</option>
-                                <option value="Композитный">Композитный</option>
-                                <option value="Гипс">Гипс</option>
                             </select>
                         </div>
                         <div class="archive-wrap">
@@ -514,46 +523,178 @@
         </section>
         <section class="guests">
             <div class="container">
-                <h2 class="guests__title title-h2">
-                    Гости
-                </h2>
-                <p class="desc-20 guests__desc">
-                    У нас бывают:
-                </p>
-                <p class="desc-20">
-                    Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!
-                </p>
-                <div class="accordion-block guests__accordion-block">
+                <div class="guests__content">
+                    <div class="guests__title-wrapper">
+                        <h2 class="guests__title title-h2 c_white">
+                            Гости
+                        </h2>
+                        <p class="desc-20 guests__desc text_gray">
+                            У нас бывают:
+                        </p>
+                        <p class="desc-20 text_gray">
+                            Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!
+                        </p>
+                    </div>
+                    <div class="guests__profile">
 
-                </div>
-                <div class="guests__profile">
-                    <article class="person-item">
-                        <figure>
-                            <p><img src="img/guests.jpg" alt="Гость" /></p>
-                            <div class="social-container">
-                                <ul class="social-list">
-                                    <li class="social-item">
-                                        <a href="#" class="social-link instagram"></a>
-                                    </li>
-                                    <li class="social-item">
-                                        <a href="#" class="social-link facebook"></a>
-                                    </li>
-                                    <li class="social-item">
-                                        <a href="#" class="social-link twitter"></a>
-                                    </li>
-                                </ul>
+                        <div class="accordion-block guests__accordion-block">
+
+                            <ul id="guestsAcc" class="acc__wrapper">
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Блогеры</span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Сергей Денисов</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Матвей Мечников</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Константин Прусино</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Иван Калитников</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Евгений Войновский</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Ольга Мартынова</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Дмитрий Михалок</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пётр Пиотровский</a>
+                                        </li>
+
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Олег Свиридовский</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Владислав Кауперс</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Михаил Пожитников</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Георгий Полуян</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Денис Тельман</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Юрий Горин</a>
+                                        </li>
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Максим Сергеев</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Арт-критики </span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пример</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Художники </span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пример</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Люди науки </span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пример</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Историки </span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пример</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="acc-item">
+                                    <button class="acc-item__button">
+                                        <span class="acc-item__title">Филологи</span>
+                                    </button>
+                                    <ul class="acc-list">
+                                        <li class="acc-list__item">
+                                            <a type="button" class="acc-link">Пример</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <article class="person-item">
+                            <figure>
+                                <p><img src="img/guests.jpg" alt="Гость" /></p>
+                                <div class="social-container">
+                                    <ul class="social-list">
+                                        <li class="social-item">
+                                            <a href="#" class="social-link instagram"></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" class="social-link facebook"></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" class="social-link twitter"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <figcaption>
+                                    <ul class="person-social__container">
+                                        <li class="person-social__item">
+                                            <button class="btn-social btn-insta"></button>
+                                        </li>
+                                        <li class="person-social__item">
+                                            <button class="btn-social btn-facebook"></button>
+                                        </li>
+                                        <li class="person-social__item">
+                                            <button class="btn-social btn-twitter"></button>
+                                        </li>
+                                    </ul>
+                                    <h3 class="person-name c_white desc-20">
+                                        Ольга Мартынова
+                                    </h3>
+
+                                    <p class="person-desc text_gray">
+                                        Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <div class="person-btn">
+                                <a href="#" class="btn-mini btn--primary_light person-btn">Эфиры с гостем</a>
                             </div>
-                            <figcaption>
-                                <h3 class="person-name">
-                                    Ольга Мартынова
-                                </h3>
-                                <p class="person-desc">
-                                    Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
-                                </p>
-                            </figcaption>
-                        </figure>
-                        <a href="#" class="btn-mini">Эфиры с гостем</a>
-                    </article>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>

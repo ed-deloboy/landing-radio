@@ -1,14 +1,19 @@
 .hero {
-    background-image: url(../img/microphone.jpg);
+    /*    background-image: url(../img/microphone.jpg);
     background-position: right center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding: 40px 0 80px 0;
 }
-.hero__title {
+
+.hero__title {}
+
+.hero__info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.title-h1 {
-}
+
 .hero__desc {
-   max-width: 600px;
-   margin-bottom: 50px;
+    max-width: 600px;
+    margin-bottom: 50px;
 }

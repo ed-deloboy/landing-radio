@@ -132,6 +132,17 @@ html {
 }
 
 
+/* colors */
+
+.c_white {
+    color: var(--white);
+}
+
+.text_gray {
+    color: var(--text_gray);
+}
+
+
 /* flex */
 
 .d-flex {

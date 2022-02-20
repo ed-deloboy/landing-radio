@@ -1,5 +1,6 @@
 :root {
-    --black: rgb(0, 0, 0);
+    /* --black: rgb(0, 0, 0); */
+    --black: #121723;
     --white: rgb(255, 255, 255);
     --base-color: #6D31EE;
     --primary: #6D31EE;
@@ -13,7 +14,7 @@
     --red: #FF6F6F;
     --promo_color: #F0D288;
     --promo_color_shade: #BB973E;
-    /* font sixe */
+    /* font size */
     --fz-20: 1.25rem;
     --fz-16: 1rem;
     --fz_12: 0.75rem;
