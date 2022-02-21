@@ -1,0 +1,54 @@
+.playlists {
+    padding: 40px 0;
+}
+
+.playlists__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlists__left {}
+
+.playlists__title {
+    margin-bottom: 20px;
+}
+
+.label-wrap {}
+
+.label-desc {
+    color: var(--text_gray);
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    font-size: var(--fz-20);
+}
+
+.check {}
+
+.playlists__desc {}
+
+.playlists__copyright {}
+
+.playlists__eighteen {}
+
+.eighteen {}
+
+.playlists__right {}
+
+.playlists__list {}
+
+.playlists__item {}
+
+.country-flag {}
+
+.playlists__profile {}
+
+.playlists__profile-img {}
+
+.profile-desc {}
+
+.playlists__profile-title {}
+
+.playlists__profile-desc {}
