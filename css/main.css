@@ -42,6 +42,25 @@ textarea {
     resize: none;
 }
 
+fieldset {
+    position: relative;
+    border: none;
+}
+
+legend {
+    position: absolute;
+    visibility: hidden;
+}
+
+input {
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
 button {
     background-color: #fff;
     border: none;

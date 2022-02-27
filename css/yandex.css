@@ -1,6 +1,61 @@
-.yandex{
-padding: 40px;
+.yandex {
+    padding: 60px 0;
+    background: var(--light_black);
 }
-.yandex__article{
-display: flex;
+
+.yandex__article {
+    display: flex;
+    gap: 30px;
+}
+
+.yandex__title {
+    position: relative;
+    color: var(--promo_color);
+    padding-bottom: 50px;
+    margin-bottom: 18px;
+}
+
+.yandex__title::after {
+    content: url("../img/wave.svg");
+    position: absolute;
+    width: 100%;
+    /*border-top: 1px solid red;*/
+    bottom: 0;
+    left: 0;
+}
+
+.yandex__desc {
+    color: var(--white);
+    line-height: 180%;
+    margin-bottom: 12px;
+}
+
+.yandex__desc a {
+    color: var(--promo_color);
+
+}
+
+.yandex__price .price {
+    display: block;
+    color: var(--white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.yandex__img-wrap {
+    position: relative;
+}
+
+.yandex__img-wrap:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/new.svg");
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+}
+
+.yandex__img {
+    object-fit: contain;
+    max-width: 640px;
 }

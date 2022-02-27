@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/acc.css">
     <link rel="stylesheet" href="css/playlists.css">
     <link rel="stylesheet" href="css/yandex.css">
+    <link rel="stylesheet" href="css/about.css">
     <!-- select -->
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/select-init.js"></script>
@@ -929,42 +930,49 @@
     </section>
     <section class="yandex">
         <div class="container">
-            <article class="yandex__article ">
-                <img src="img/wave-station.png "
-                     alt="Колонка w-wave красного цвета для прослушивания музыки с регулировкой звука "
-                     class="yandex__img ">
-                <div class="yandex__wrap-info ">
-                    <h2 class="yandex__title title-h2 ">
+            <article class="yandex__article">
+                <div class="yandex__img-wrap">
+                    <img src="img/wave-station.png"
+                         alt="Колонка w-wave красного цвета для прослушивания музыки с регулировкой звука"
+                         class="yandex__img">
+                </div>
+                <div class="yandex__wrap-info">
+                    <h2 class="yandex__title title-h2">
                         Будь с нами на одной волне!
                     </h2>
-                    <p class="yandex__desc ">
+                    <p class="yandex__desc">
                         Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только
                         начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать :)
                     </p>
-                    <p class="yandex__desc ">
-                        Итак, встречайте! Портативный радиоприёмник-колонка <a href="# ">W-Wave 1.0 xm.</a> Тщательный
-                        подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но
+                    <p class="yandex__desc">
+                        Итак, встречайте! Портативный радиоприёмник-колонка <a href="#">W-Wave 1.0 xm.</a> Тщательный
+                        подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах,
+                        но
                         мы активно трудимся над новыми партиями
                         и дизайном. Спешите приобрести!
                     </p>
-                    <div class="yandex__price ">
-                        <span class="price ">2800 руб</span>
+                    <div class="yandex__price">
+                        <span class="price">2800 руб</span>
+                        <button class="btn btn-promo">
+                            <span class="promo-logo"></span>
+                            Купить на Яндекс.Маркет
+                        </button>
                     </div>
                 </div>
             </article>
         </div>
     </section>
-    <section class="about ">
+    <section class="about">
         <div class="container ">
-            <h2 class="about__title title-h2 ">
-                О нас
-            </h2>
-            <div class="about__top-info ">
-                <div class="about__info-wrap ">
-                    <p class="desc-20 about__desc ">
+            <div class="about__top-info">
+                <div class="about__info-wrap">
+                    <h2 class="about__title title-h2">
+                        О нас
+                    </h2>
+                    <p class="desc-20 about__desc">
                         Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
                     </p>
-                    <p class="desc-20 ">
+                    <p class="desc-20">
                         Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель,
                         поэтому вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо
                         всём! Это можно сделать либо написав нам в форме ниже, либо кликнув
@@ -974,67 +982,67 @@
                 <img class="decorative-img " src="img/Spiral 3.svg ">
                 <img class="decorative-img " src="img/Dawn.svg ">
             </div>
-            <ul class="about__command-list ">
-                <li class="about__command-item ">
-                    <img src="# " alt=" " class="command-img ">
-                    <div class="about__command-card ">
-                        <p class="command-title ">
-                            анна
+            <ul class="about__command-list">
+                <li class="about__command-item">
+                    <img src="/img/person1.jpg" alt="Дмитрий Гутенберг" class="command-img">
+                    <div class="about__command-card">
+                        <p class="command-title desc-20">
+                            Дмитрий Гутенберг
                         </p>
-                        <p class="command-subtitle ">
-                            текст
+                        <p class="command-subtitle">
+                            Эксперт (ну, почти) по всем вопросам (почти).
+                        </p>
+                    </div>
+                </li>
+                <li class="about__command-item">
+                    <img src="/img/person2.jpg" alt=" " class="command-img">
+                    <div class="about__command-card">
+                        <p class="command-title desc-20">
+                            Анна Васильева
+                        </p>
+                        <p class="command-subtitle">
+                            Как я здесь оказалась? А главное — зачем?
+                        </p>
+                    </div>
+                </li>
+                <li class="about__command-item">
+                    <img src="/img/person3.jpg" alt=" " class="command-img">
+                    <div class="about__command-card">
+                        <p class="command-title desc-20">
+                            Пётр Дмитриевский
+                        </p>
+                        <p class="command-subtitle">
+                            Господа! Внимание!! Благодарю за внимание!!!
                         </p>
                     </div>
                 </li>
                 <li class="about__command-item ">
-                    <img src="# " alt=" " class="command-img ">
+                    <img src="/img/person4.jpg" alt=" " class="command-img ">
                     <div class="about__command-card ">
-                        <p class="command-title ">
-                            анна
+                        <p class="command-title desc-20">
+                            Татьяна Флеганова
                         </p>
                         <p class="command-subtitle ">
-                            текст
-                        </p>
-                    </div>
-                </li>
-                <li class="about__command-item ">
-                    <img src="# " alt=" " class="command-img ">
-                    <div class="about__command-card ">
-                        <p class="command-title ">
-                            анна
-                        </p>
-                        <p class="command-subtitle ">
-                            текст
-                        </p>
-                    </div>
-                </li>
-                <li class="about__command-item ">
-                    <img src="# " alt=" " class="command-img ">
-                    <div class="about__command-card ">
-                        <p class="command-title ">
-                            анна
-                        </p>
-                        <p class="command-subtitle ">
-                            текст
+                            Одна я в пальто стою красивая, а вокруг...
                         </p>
                     </div>
                 </li>
             </ul>
-            <form action="send.php " class="form " method="post ">
+            <form action="send.php" class="form" method="post">
                 <fieldset>
                     <legend>Отправьте заявку на обратный звонок</legend>
-                    <textarea class="form__textarea " name="clientinfo " id="clientinfo "
+                    <textarea class="form__textarea desc-20" name="clientinfo " id="clientinfo"
                               placeholder="Что скажете? "></textarea>
-                    <div class="form__input-wrap ">
-                        <input id="name " type="text " class="form__name " placeholder="Имя ">
-                        <input id="mail " type="text " class="form__mail " placeholder="E-mail ">
+                    <div class="form__input-wrap">
+                        <input id="name" type="text" class="form__name form-input" placeholder="Имя">
+                        <input id="mail" type="text" class="form__mail form-input" placeholder="E-mail ">
                     </div>
-                    <button type="submit ">
-                        <span>Отправить</span>
+                    <button class="btn btn--bg desc-20" type="submit">
+                        Отправить
                     </button>
                     <p>
-                        <label for="form__succes ">
-                            <input id="form__succes " type="checkbox ">
+                        <label class="succes-lable for="form__succes">
+                            <input class="form-check" id="form__succes" type="checkbox">
                             Согласен на обработку персональных данных
                         </label>
                     </p>
