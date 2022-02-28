@@ -45,6 +45,8 @@ textarea {
 fieldset {
     position: relative;
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 legend {
@@ -111,6 +113,9 @@ html {
 .text-link:hover {
     color: var(--primary_light);
     transition: color .1s ease-in-out;
+}
+.d-b{
+    display: block;
 }
 
 .title-h1 {
