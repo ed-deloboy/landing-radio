@@ -1,0 +1,52 @@
+.footer {
+    background-color: var(--light_black);
+}
+
+.footer__content-wrap {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__right-wrap {
+    display: flex;
+}
+.column__menu-list:not(:last-child){
+    margin-right: 110px;
+}
+.column__menu-item a{
+    color: var(--white);
+}
+.column__menu-item:not(:last-child){
+margin-bottom: 20px;
+}
+
+.footer__bottom p {
+    display: flex;
+    justify-content: center;
+    color: var(--text_gray);
+}
+
+.footer__bottom p {
+    padding: 10px 0;
+}
+
+.footer__bottom {
+    position: relative;
+    padding-top: 10px;
+}
+
+.footer__bottom::before {
+    content: url("../img/wave-footer.svg");
+    position: absolute;
+    top: 0;
+}
+.social-container{
+    margin-top: 20px;
+}
+.social-list{
+display: flex;
+}
+.social-item:not(:last-child){
+    margin-right: 20px;
+}

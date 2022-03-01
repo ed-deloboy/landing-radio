@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+figure,
+figcaption,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    position: absolute;
+    visibility: hidden;
+}
+
+input {
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+html {
+    font-family: Muller_Regular;
+    font-size: 16px;
+}
+
+
+/* container */
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.link {
+    color: var(--black);
+    background-color: transparent;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.link:hover {
+    color: var(--base-color);
+}
+
+.link:focus {
+    color: var(--white);
+    background-color: var(--base-color-light);
+}
+
+.link:active {
+    color: var(--base-color-dark);
+    background-color: transparent;
+}
+
+.text-link {
+    color: var(--primary);
+    transition: color .1s ease-in-out;
+}
+
+.text-link:hover {
+    color: var(--primary_light);
+    transition: color .1s ease-in-out;
+}
+.d-b{
+    display: block;
+}
+
+.title-h1 {
+    color: var(--black);
+    font-weight: 700;
+    font-size: var(--title_h1_size);
+    margin-bottom: 10px;
+}
+
+.title-h2 {
+    color: var(--black);
+    font-weight: 400;
+    font-size: var(--title_h2_size);
+    margin-bottom: 10px;
+}
+
+.title-h3 {
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--fz-20);
+}
+
+.italic-400 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.desc-16 {
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 150%;
+}
+
+.desc-20 {
+    font-size: var(--fz-20);
+    color: var(--black);
+    line-height: 160%;
+}
+
+
+/* colors */
+
+.c_white {
+    color: var(--white);
+}
+
+.text_gray {
+    color: var(--text_gray);
+}
+
+
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+/* grid */
+
+.grid {
+    display: grid;
+}
