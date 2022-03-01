@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/vars.css">
@@ -37,28 +38,31 @@
 <header class="header">
     <div class="container">
         <div class="header-top">
-            <a href="#" class="header-top__logo">
-                <img src="img/logo.svg" alt="Логотип компании" class="header-top__logo-img">
-            </a>
-            <nav class="header-top__nav">
-                <ul class="header-top__nav-list">
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link link">Подкасты</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link link">Передачи</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link link">Гости</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link link">Плейлисты</a>
-                    </li>
-                    <li class="header-top__nav-item">
-                        <a href="#" class="header-top__nav-link link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
+           <div class="header-top__menu-wrapper">
+               <a href="#" class="header-top__logo">
+                   <img src="img/logo.svg" alt="Логотип компании" class="header-top__logo-img">
+               </a>
+               <nav class="header-top__nav">
+                   <ul class="header-top__nav-list">
+                       <li class="header-top__nav-item">
+                           <a href="#" class="header-top__nav-link link">Подкасты</a>
+                       </li>
+                       <li class="header-top__nav-item">
+                           <a href="#" class="header-top__nav-link link">Передачи</a>
+                       </li>
+                       <li class="header-top__nav-item">
+                           <a href="#" class="header-top__nav-link link">Гости</a>
+                       </li>
+                       <li class="header-top__nav-item">
+                           <a href="#" class="header-top__nav-link link">Плейлисты</a>
+                       </li>
+                       <li class="header-top__nav-item">
+                           <a href="#" class="header-top__nav-link link">О нас</a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+
             <div class="header-top__enter-wrapper">
                 <button class="btn-search"></button>
                 <button class="btn-mini">
@@ -440,7 +444,7 @@
                     <div class="dropdown-wrap">
                         <h2 class="transmission__title title-h2">Передачи</h2>
                         <p class="drop-desc">
-                            Автор
+                            Автор:
                         </p>
                         <select name="select" id="selectCustom">
                             <option value="Дмитрий Гутенберг">Дмитрий Гутенберг</option>
@@ -455,7 +459,7 @@
                             Архив
                         </button>
                         <p class="archive-desc">
-                            В архив попадают все передачи, которые вы пропустили! Enjoy :)
+                            В архив попадают все передачи, которые вы пропустили! <span>Enjoy :)</span>
                         </p>
                     </div>
                 </div>
@@ -1060,69 +1064,73 @@
             <div class="footer__left-wrap">
                 <a href="#" class="logo-footer">
                     <img src="img/logo2.svg" alt="Логотип компании">
-                    <div class="social-container">
-                        <ul class="social-list">
-                            <li class="social-item">
-                                <a href="# " class="social-link instagram"></a>
-                            </li>
-                            <li class="social-item">
-                                <a href="# " class="social-link facebook"></a>
-                            </li>
-                            <li class="social-item">
-                                <a href="# " class="social-link twitter"></a>
-                            </li>
-                        </ul>
-                    </div>
                 </a>
+
+                <div class="social-container">
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#" class="btn-social btn-you-tube"></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="btn-social btn-insta"></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="# " class="btn-social btn-facebook"></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="# " class="btn-social btn-twitter"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__right-wrap ">
                 <ul class="column__menu-list ">
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Подкасты
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Передачи
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Гости
                         </a>
                     </li>
                 </ul>
                 <ul class="column__menu-list ">
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Плейлисты
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Сетка
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             О нас
                         </a>
                     </li>
                 </ul>
                 <ul class="column__menu-list ">
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Новости
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Блоги
                         </a>
                     </li>
                     <li class="column__menu-item ">
-                        <a href="# " class="column__menu-link ">
+                        <a href="# " class="column__menu-link link">
                             Топы
                         </a>
                     </li>
@@ -1130,11 +1138,11 @@
             </div>
         </div>
     </div>
-        <div class="footer__bottom ">
-            <p>
-                W-WAVE ® 2021
-            </p>
-        </div>
+    <div class="footer__bottom ">
+        <p>
+            W-WAVE ® 2021
+        </p>
+    </div>
 
 </footer>
 

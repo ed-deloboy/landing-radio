@@ -16,7 +16,10 @@
 
 .dropdown-wrap {}
 
-.drop-desc {}
+.drop-desc {
+    color: var(--text_gray);
+    margin-bottom: 10px;
+}
 
 .archive-wrap {
     background-image: url(../img/mic.svg);
@@ -27,6 +30,10 @@
 
 .archive-desc {
     margin-top: 20px;
+    color: var(--text_gray);
+}
+.archive-desc span {
+    font-family: Muller_Medium;
 }
 
 .transmission__right {}
