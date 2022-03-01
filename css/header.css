@@ -1,0 +1,158 @@
+.header {
+    border-bottom: 1px solid var(--light_color);
+    padding-top: 23px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__menu-wrapper {
+    display: flex;
+}
+
+.header-top__logo {
+}
+
+.header-top__logo-img {
+}
+
+.header-top__nav {
+    margin-left: 80px;
+}
+
+.header-top__nav-list {
+    display: flex;
+}
+
+.header-top__nav-item {
+}
+
+.header-top__nav-item:not(:last-child) {
+    margin-right: 59px;
+}
+
+.header-top__nav-link {
+    font-size: var(--fz-20);
+}
+
+.header-top__enter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__enter-wrapper > button:first-child {
+    margin-right: 22px;
+}
+
+.sub-header {
+    border-bottom: 1px solid var(--light_color);
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom__nav {
+    position: relative;
+    display: flex;
+}
+
+
+.header-bottom__item {
+
+}
+
+.header-bottom__item:not(:last-child) {
+    margin-right: 53px;
+}
+
+.header-bottom__link {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.header-bottom__radio-list {
+    display: flex;
+
+}
+
+.header-bottom__radio-item {
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom__radio-item:before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background: red;
+    right: 0;
+}
+.header-bottom__radio-item:after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background: red;
+    left:-2px;
+}
+
+
+.header-bottom__radio-item--wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.header-bottom__radio-item--title {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.header-bottom__radio-item--radio-name {
+    text-align: center;
+}
+
+.header-bottom__item-eighteen-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: 55px;
+    margin-left: 30px;
+}
+
+.header-bottom__item-eighteen-plus::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 55px;
+    background-color: var(--light_color);
+}
+
+.eighteen {
+    position: relative;
+    border: 1px solid var(--light_color);
+    padding: 20px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+.eighteen::after {
+    content: '12+';
+    position: absolute;
+    top: 12px;
+    left: 9px;
+}

@@ -1,0 +1,123 @@
+.playlists {
+    padding: 60px 0;
+}
+
+.playlists__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlists__left {
+    margin-right: 30px;
+}
+
+.playlists__title {
+    margin-bottom: 20px;
+}
+
+.label-wrap {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--shade_gray);
+    padding-bottom: 30px;
+}
+
+.label-desc {
+    color: var(--text_gray);
+}
+
+.playlists__desc {
+    margin-bottom: 10px;
+    color: var(--text_gray);
+    line-height: 22px;
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    font-size: var(--fz-20);
+}
+
+
+/* .check {} */
+
+.playlists__copyright {
+    margin-bottom: 20px;
+    font-size: var(--fz_22);
+    font-family: Muller_light-italic;
+    color: var(--text_gray);
+}
+
+
+/* .playlists__eighteen {} */
+
+
+/* .eighteen {} */
+
+
+/* .playlists__right {} */
+
+.playlists__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.playlists__item {
+    position: relative;
+}
+
+.playlists__item .playlists__country-img {
+    position: absolute;
+    right: 0;
+    padding: 3px;
+    background-color: var(--black);
+}
+
+
+/* .country-flag {} */
+
+
+/* .playlists__profile {} */
+
+
+/* .playlists__profile-img {} */
+
+.profile-desc {
+    margin-top: -5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid var(--light_color);
+}
+
+.playlists__profile-title {
+    margin-bottom: 4px;
+}
+
+.playlists__profile-desc {
+    font-size: var(--fz_12);
+    color: var(--text_gray);
+}
+
+.plus::before {
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: -8px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    border: 1px solid var(--text_gray);
+}
+
+.plus {
+    position: relative;
+    padding-right: 12px;
+    font-size: 16px;
+    color: var(--text_gray);
+}
+
+.plus::after {
+    position: absolute;
+    content: "+";
+}
