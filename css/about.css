@@ -21,8 +21,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 20px;
 }
-.form__textarea:not(:last-child){
+.form__textarea{
     margin-bottom: 20px;
 }
 
@@ -53,6 +54,7 @@
 
 .form {
     max-width: 920px;
+    font-size: var(--fz_12);
 }
 
 .form__textarea {
@@ -92,18 +94,18 @@
     position: absolute;
     left: 0;
     top: -3px;
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     border: 1px solid var(--white);
 }
 
 .form-check + span:before {
     content: '';
     position: absolute;
-    left: 3px;
+    left: 2px;
     top: 2px;
-    width: 8px;
-    height: 5px;
+    width: 6px;
+    height: 4px;
     opacity: 0;
     transform: rotate(-45deg);
     border-left: 2px solid var(--primary_light);
