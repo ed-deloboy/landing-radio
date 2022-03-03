@@ -213,8 +213,8 @@
 
 .btn-play-mini {
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     background-color: var(--text_gray);
     transition: background-color .1s ease-in-out;
@@ -235,12 +235,12 @@
 .btn-play-mini::after {
     content: '';
     position: absolute;
-    border: 7px solid transparent;
+    border: 5px solid transparent;
     /* Прозрачные границы */
-    border-top: 9px solid var(--white);
+    border-top: 7px solid var(--white);
     transform: rotate(-90deg);
-    top: 3px;
-    left: 10px;
+    top: 4px;
+    left: 9px;
     transition: border-top .1s ease-in-out;
 }
 

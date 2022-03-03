@@ -50,7 +50,7 @@
 
 .sub-header {
     border-bottom: 1px solid var(--light_color);
-    padding: 20px 0;
+    padding: 22px 0;
     position: relative;
 }
 
@@ -81,33 +81,18 @@
 
 .header-bottom__radio-list {
     display: flex;
-
 }
 
 .header-bottom__radio-item {
     position: relative;
-    padding: 10px 20px;
     display: flex;
     align-items: center;
+    background-color: red;
+    padding: 10px 0;
 }
-
-.header-bottom__radio-item:before {
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 2px;
-    background: red;
-    right: 0;
+.header-bottom__radio-item:not(:last-child) {
+    margin-right: 70px;
 }
-.header-bottom__radio-item:after {
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 2px;
-    background: red;
-    left:-2px;
-}
-
 
 .header-bottom__radio-item--wrap {
     display: flex;
@@ -118,7 +103,6 @@
 .header-bottom__radio-item--title {
     text-align: center;
     font-size: 12px;
-
 }
 
 .header-bottom__radio-item--radio-name {
