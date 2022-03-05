@@ -24,10 +24,12 @@
 /*}*/
 
 .btn {
-    padding: 16px 28px;
+    padding: 34px 53px;
+    line-height: 0px;
     border: 2px solid var(--primary);
     color: var(--primary);
     border-radius: 40px;
+    font-size: var(--fz-20);
     background-color: transparent;
     transition: color .1s ease-in-out, background-color .1s ease-in-out, border .1s ease-in-out;
 }

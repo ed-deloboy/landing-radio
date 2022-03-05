@@ -76,6 +76,9 @@ html {
     font-size: 16px;
 }
 
+.fz-20 {
+    font-size: 20px;
+}
 
 /* container */
 
@@ -113,7 +116,8 @@ html {
     color: var(--primary_light);
     transition: color .1s ease-in-out;
 }
-.d-b{
+
+.d-b {
     display: block;
 }
 
@@ -185,4 +189,43 @@ html {
 
 .grid {
     display: grid;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: var(--shade_gray);
+    color: var(--black);
+    font-size: var(--fz_12);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 120%;
+    left: -150%;
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    box-shadow: 0 0 5px #b7b7b7;
+}
+
+.tooltiptext:before {
+    position: absolute;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid var(--shade_gray);
+    bprder-top: 8px solid var(--shade_gray);
+    top: -19%;
+    transform: rotate(90deg);
+    right: 50%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
