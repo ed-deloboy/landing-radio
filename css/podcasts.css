@@ -3,10 +3,12 @@
     padding: 92px 0;
 }
 
-.podcasts__title {}
+.podcasts__title {
+    margin-bottom: 24px;
+}
 
 .podcasts__list {
-    padding-bottom: 20px;
+    padding-bottom: 59px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -25,18 +27,19 @@
     left: 0;
     background-color: var(--light_color);
     color: var(--black);
-    padding: 3px;
+    padding: 2px 7px 2px 9px;
+    font-size: 10px;
 }
 
-.podcasts__radio-img {}
 
 .podcasts_item-wrap {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 25px;
-    margin-top: 20px;
+    padding-left: 31px;
+    padding-right: 33px;
+    margin-top: 24px;
     width: 100%;
 }
 
@@ -52,6 +55,8 @@
 
 .podcasts__time {
     font-size: var(--fz_12);
+    margin-bottom: 6px;
+    display: block;
 }
 
 .podcasts__artist-name {
@@ -65,17 +70,18 @@
     bottom: 0;
     left: 0;
     display: flex;
-    padding: 8px 0;
+    padding-top: 7px;
+    padding-bottom: 3px;
     border-top: 1px solid var(--light_color);
     width: 100%;
 }
 
 .podcasts__media-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 27px;
 }
 
 .podcasts__media-item:first-child {
-    margin-left: 23px;
+    margin-left: 27px;
 }
 
 .media-play {
@@ -148,4 +154,13 @@
 
 .podcasts__media-share {
     padding-left: 20px;
+}
+.color-text_gray{
+    color: var(--text_gray);
+}
+.media-btn span{
+    color: var(--text_gray);
+}
+.media-btn:focus{
+    color: var(--white);
 }

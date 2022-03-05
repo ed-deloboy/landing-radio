@@ -2,7 +2,7 @@
     /*    background-image: url(../img/microphone.jpg);
     background-position: right center;
     background-repeat: no-repeat; */
-    padding: 38px 0 46px 0;
+    padding: 38px 0 53px 0;
 }
 
 .hero__title {}
@@ -15,7 +15,7 @@
 
 .hero__desc {
     max-width: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
 }
 .weight-600{
     font-family: Muller_Bold;

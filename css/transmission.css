@@ -1,5 +1,5 @@
 .transmission {
-    padding: 40px 0;
+    padding: 92px 0;
 }
 
 .transmission__wrap-container {
@@ -42,6 +42,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 17px;
 }
 
 .transmission__item div {
