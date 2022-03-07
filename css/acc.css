@@ -39,7 +39,7 @@
 .acc-item .acc-item__button {
     border-top: 1px solid #cecece;
     margin-top: -1px;
-    padding: 16px 0;
+    padding: 22px 0;
 }
 
 .acc-item__title {
@@ -60,8 +60,9 @@
 .acc-item__accord {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
+    margin-right: 3px;
     border-radius: 50%;
     border: 2px solid #cecece;
     background-color: transparent;
@@ -74,13 +75,13 @@
 .acc-item__accord::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 14px;
-    top: 12px;
+    width: 12px;
+    height: 12px;
+    left: 12px;
+    top: 10px;
     transform: rotate(135deg);
-    border-top: 1px solid #cecece;
-    border-right: 1px solid #cecece;
+    border-top: 2px solid #cecece;
+    border-right: 2px solid #cecece;
     transition: border .1s ease-in-out;
 }
 
@@ -91,7 +92,6 @@
 .acc-item__button:hover,
 .acc-item__button:focus,
 .acc-item__button:active {
-    color: var(--focus);
     border-top: 1px solid #cecece;
     border-bottom: 1px solid #cecece;
 }
@@ -99,12 +99,15 @@
 .acc-list {
     margin: 0;
     padding: 0;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    flex-wrap: wrap;
-    max-height: 170px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    display: grid;
+    gap: 0 30px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr) ;
+    max-height: 190px;
+
 }
 
 .acc-list__item {
@@ -115,6 +118,7 @@
     color: var(--white);
     transition: color .1s ease-in-out;
     font-size: 16px;
+    line-height: 130%;
 }
 
 .acc-link:hover {
@@ -134,8 +138,8 @@
 /*  */
 
 .acc-item__button:hover>.acc-item__accord::after {
-    border-top: 1px solid var(--primary_light);
-    border-right: 1px solid var(--primary_light);
+    border-top: 2px solid var(--primary_light);
+    border-right: 2px solid var(--primary_light);
 }
 
 .acc-item__button:hover>.acc-item__accord {
@@ -154,8 +158,8 @@
 }
 
 .acc-item__button:focus>.acc-item__accord::after {
-    border-top: 1px solid var(--text_gray);
-    border-right: 1px solid var(--text_gray);
+    border-top: 2px solid var(--text_gray);
+    border-right: 2px solid var(--text_gray);
 }
 
 .acc-item__button:focus>.acc-item__accord {
@@ -174,8 +178,8 @@
 }
 
 .acc-item__button:active>.acc-item__accord::after {
-    border-top: 1px solid var(--white);
-    border-right: 1px solid var(--white);
+    border-top: 2px solid var(--white);
+    border-right: 2px solid var(--white);
 }
 
 .acc-item__button:active>.acc-item__accord {

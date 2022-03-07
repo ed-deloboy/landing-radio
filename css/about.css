@@ -1,15 +1,16 @@
 .about {
-    padding: 60px 0;
+    padding: 91px 0;
     background: var(--black);
 }
 
 .about__title {
     color: var(--white);
+    margin-bottom: 5px;
 }
 
 .about__desc {
     font-family: Muller_Medium;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .about__info-wrap p {
@@ -20,24 +21,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 29px;
     margin-bottom: 20px;
 }
 .form__textarea{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .about__command-list {
+    padding-top: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 
 }
 
 .about__command-card {
-    padding: 20px 0;
+    padding: 19px 0 10px 1px;
 }
 
 .command-img {
@@ -46,10 +48,12 @@
 
 .command-title {
     color: var(--white);
+    margin-bottom: 3px;
 }
 
 .command-subtitle {
     color: var(--text_gray);
+    line-height: 150%;
 }
 
 .form {
@@ -63,8 +67,8 @@
     background: transparent;
     border-radius: 30px;
     border: 1px solid var(--white);
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 23px;
+    padding-left: 31px;
     color: var(--white);
 }
 
@@ -72,7 +76,7 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .form-input {
@@ -80,14 +84,15 @@
     height: 70px;
     border: 1px solid var(--white);
     border-radius: 40px;
-    padding-left: 30px;
+    padding-left: 31px;
     background: transparent;
+    font-size: var(--fz-20);
 }
 
 .succes-lable {
     position: relative;
     color: var(--white);
-    padding-left: 20px;
+    padding-left: 23px;
 }
 
 .form-check + span {

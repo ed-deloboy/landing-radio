@@ -1,6 +1,6 @@
 .guests {
     background-color: var(--black);
-    padding: 80px 0;
+    padding: 92px 0 102px 0;
 }
 
 .guests__content {
@@ -15,12 +15,17 @@
     margin-bottom: 50px;
 }
 
-.guests__title {}
+.guests__title {
+    margin-bottom: 7px;
+}
 
 .guests__desc {
     font-family: 'Muller_Medium';
+    margin-bottom: 7px;
 }
-
+.guests__desc--alltext{
+    line-height: 165%;
+}
 .guests__accordion-block {
     width: 100%;
 }
@@ -43,16 +48,28 @@
 .social-link {}
 
 .person-name {
-    margin-bottom: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 4px;
+}
+
+
+.person-social__container {
+    padding: 8px 0;
+    padding-left: 2px;
+    display: flex;
+}
+
+.person-social__item:not(:last-child) {
+    margin-right: 35px;
 }
 
 .person-desc {
+    display: inline-block;
     line-height: 180%;
+    margin-bottom: 42px;
 }
 
-.person-btn {
-    margin-top: 30px;
+.person-btn--link {
+    padding: 8px 18px;
 }
 
 

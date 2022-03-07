@@ -169,3 +169,6 @@
     font-size: var(--fz_12);
     color: var(--text_gray);
 }
+.bnt-input--header{
+    padding: 7px 31px;
+}

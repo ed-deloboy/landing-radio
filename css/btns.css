@@ -79,7 +79,7 @@
     position: relative;
     color: var(--black);
     border: 2px solid var(--black);
-    padding: 8px 32px;
+    padding: 8px 43px;
     border-radius: 77px;
     background-color: transparent;
     font-size: 1rem;
@@ -274,7 +274,7 @@
 }
 
 .btn-arrow {
-    padding-right: 34px;
+    padding-right: 31px;
     background-image: url(../img/long-arrow.svg);
     background-repeat: no-repeat;
     background-position: 96% 50%;
@@ -301,19 +301,11 @@
 
 /* social */
 
-.person-social__container {
-    padding: 8px 0;
-    display: flex;
-}
-
-.person-social__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .btn-social {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -336,7 +328,7 @@
 }
 
 .btn-promo {
-    padding: 20px 10px;
+    padding: 33px 11px;
     position: relative;
     border: 2px solid var(--promo_color);
     color: var(--promo_color);
@@ -389,5 +381,5 @@
 }
 
 .form-bnt{
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }

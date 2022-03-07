@@ -1,5 +1,5 @@
 .yandex {
-    padding: 60px 0;
+    padding: 92px 0 133px 0;
     background: var(--light_black);
 }
 
@@ -11,8 +11,9 @@
 .yandex__title {
     position: relative;
     color: var(--promo_color);
-    padding-bottom: 50px;
-    margin-bottom: 18px;
+    padding-bottom: 43px;
+    margin-bottom: 8px;
+    line-height: 100%;
 }
 
 .yandex__title::after {
@@ -27,7 +28,7 @@
 .yandex__desc {
     color: var(--white);
     line-height: 180%;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .yandex__desc a {
@@ -38,8 +39,8 @@
 .yandex__price .price {
     display: block;
     color: var(--white);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 29px;
 }
 
 .yandex__img-wrap {
@@ -53,9 +54,13 @@
     background-size: cover;
     width: 160px;
     height: 160px;
+    top: 2px;
+    left: -5px;
 }
 
 .yandex__img {
     object-fit: contain;
     max-width: 640px;
+    margin-top: 10px;
+    margin-left: -5px;
 }
